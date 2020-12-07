@@ -9,14 +9,14 @@ const SideNav = () => {
     return (
         <div className='side_nav'>
             <div> 
-                <AiOutlineUser color='#6b6bbd' fontSize='30px' />
+                <AiOutlineUser color='#6b6bbd' fontSize='20px' />
                 <Link to='/profile'> Profile </Link> 
             </div>
             <div> 
-                <AiOutlineCodeSandbox color='#6b6bbd' fontSize='30px' />
+                <AiOutlineCodeSandbox color='#6b6bbd' fontSize='20px' />
                 <Link to='/'> Summary </Link> 
             </div>
-            <p><Link to='https://www.linkedin.com/in/tony-eraga-aa2011132/' target='_blank'> @toniraga </Link> </p>
+            <p> @toniraga </p>
         </div>
     )
 }

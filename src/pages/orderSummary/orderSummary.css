@@ -172,6 +172,14 @@
 }
 
 @media screen and (max-width: 780px) {
+    .order_summary h1 {
+        font-size: 20px;
+    }
+
+    ._order {
+        font-size: 17px;
+    }
+
     .order_body {
         width: 95%;
     }
@@ -192,5 +200,30 @@
         margin-right: 0;
         margin-left: 0;
         margin-top: 20px;
+    }
+
+    .order_item h4 {
+        font-size: 13px;
+    }
+
+    .order_item p {
+        font-size: 10px;
+    }
+
+    .restaurant .restaurant_name,
+    .customer .customer_name {
+        font-size: 16px;
+    }
+
+    .order_total span {
+        font-size: 13px;
+    }
+
+    .order_total div {
+        font-size: 14px;
+    }
+
+    .order_total div:last-of-type span {
+        font-size: 18px;
     }
 }

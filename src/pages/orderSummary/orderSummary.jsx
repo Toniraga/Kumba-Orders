@@ -10,10 +10,16 @@ import './orderSummary.css'
 
 const OrderSummary = () => {
     const [ drop, setDrop ] = useState(false)
+    let totalPrice = 0;
+    let subTotalPrice = 0;
 
     const dispatch = useDispatch()
     const { order_id, items, restaurant, user, createdAt } = useSelector((state) => state);
-    const { total, subTotal } = calcTotal(items)
+    if (items.length > 1) {
+        const { total, subTotal } = calcTotal(items)
+        totalPrice = total
+        subTotalPrice = subTotal
+    }
 
     useEffect(() => {
         fetch("https://indapi.kumba.io/webdev/assignment")
@@ -32,7 +38,7 @@ const OrderSummary = () => {
                         <div className='order_item'>
                             <div> <h4> Order ID </h4> <p> #{order_id} </p></div>
                             <div> <h4> Date </h4> <p> {createdAt.split('T')[0]} </p></div>
-                            <div> <h4> Amount </h4> <p> INR {total} </p></div>
+                            <div> <h4> Amount </h4> <p> INR {totalPrice} </p></div>
                             <div> <h4> Restaurant </h4> <p> {restaurant?.name} </p></div>
                             <div onClick={() => setDrop(!drop)}> { drop ? 'hide' : 'Details'} </div>
                         </div>
@@ -67,9 +73,9 @@ const OrderSummary = () => {
                                             quantity={item.quantity}  />
                                     ))}
                                     <div className='order_total'> 
-                                        <div> SubTotal: <span>INR {subTotal}</span> </div>
-                                        <div> Tax: <span>INR {total - subTotal}</span> </div>
-                                        <div> Total (plus tax): <span> INR {total} </span> </div>
+                                        <div> SubTotal: <span>INR {subTotalPrice}</span> </div>
+                                        <div> Tax: <span>INR {totalPrice - subTotalPrice}</span> </div>
+                                        <div> Total (plus tax): <span> INR {totalPrice} </span> </div>
                                     </div>
                                 </div>
                             </div>

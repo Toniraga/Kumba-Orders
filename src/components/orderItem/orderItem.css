@@ -49,3 +49,13 @@
     flex: 0.1;
     margin-right: 4px;
 }
+
+@media screen and (max-width: 780px) {
+    .items h4 {
+        font-size: 13px;
+    }
+
+    .items p {
+        font-size: 10px;
+    }
+}
