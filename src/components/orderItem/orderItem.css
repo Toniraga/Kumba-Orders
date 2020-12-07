@@ -1,0 +1,51 @@
+.items {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    border: 1px solid rgb(1, 1, 53);
+    padding: 10px;
+}
+
+.items p,
+.items h4 {
+    margin: 2px 0 8px 0;
+    font-family: Roboto;
+    font-size: 14px;
+}
+
+.items h4 {
+    color: #555;
+    font-weight: bolder;
+}
+
+.items p {
+    font-size: 12px;
+    font-weight: 500;
+    font-weight: 900;
+    color: #000;
+}
+
+.__name {
+    flex: 0.26;
+    margin-right: 4px;
+}
+
+.__price {
+    flex: 0.26;
+    margin-right: 4px;
+}
+
+.__category {
+    flex: 0.26;
+    margin-right: 4px;
+}
+
+.__tax {
+    flex: 0.1;
+    margin-right: 4px;
+}
+
+.__quantity {
+    flex: 0.1;
+    margin-right: 4px;
+}

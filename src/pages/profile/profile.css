@@ -1,0 +1,129 @@
+.profile {
+    display: flex;
+    height: 100vh;
+}
+
+.profile_main {
+    background-color: #fff;
+    flex: 0.8;
+    overflow-y: scroll;
+}
+
+.profile_body {
+    width: 85%;
+    margin: 40px auto;
+    box-shadow: 1px 4px 10px 0px #bbb;
+    height: 100%;
+}
+
+.profile_details {
+    height: 75%;
+    background: linear-gradient(to left, #6b6bbd ,#424296);
+}
+
+.profile_details_head {
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.profile_image {
+    height: 90%;
+    width: 70%;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile_image p {
+    width: 100%;
+    border: 1px solid #060646;
+}
+
+.__picture {
+    height: 171px;
+    width: 171px;
+    padding: 4px 4px 4px 4px;
+    border-radius: 62%;
+    border: 2px solid #060646;
+}
+
+.__picture img {
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+}
+
+
+.__picture_name {
+    margin-top: 30px;
+    font-size: 30px;
+    font-weight: 600;
+    color: #eee;
+}
+
+.__picture_bio {
+    display: grid;
+    place-items: center;
+}
+
+.__picture_bio h4 {
+    margin: 5px 0 10px 0;
+    font-size: 18px;
+    color: #eee;
+}
+
+.__picture_bio div {
+    font-size: 15px;
+    font-family: Roboto;
+    font-weight: 900;
+    color: #ccc;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.profile_base {
+    display: flex;
+    width: 85%;
+    margin: 60px auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile_base div {
+    flex: 0.5;
+    text-align: center;
+}
+
+.profile_base p {
+    font-size: 13px;
+    font-weight: 700;
+    color: #444;
+}
+
+.preferences {
+    display: flex;
+    width: 90%;
+    margin: 5px auto;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.preferences p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    border: 0;
+    font-size: 14px;
+    font-weight: 900;
+    color: #222;
+    font-family: Roboto;
+    background-color: #6b6bbd;
+    margin: 4px 0;
+    padding: 2px 6px;
+    border-radius: 10px;
+}
